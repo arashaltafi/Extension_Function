@@ -1,17 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
+    android:layout_gravity="center"
+    android:gravity="center"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="50dp"
     tools:context=".MainActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="1"
+    android:orientation="horizontal">
 
     <ImageView
-        android:id="@+id/img_test"
+        android:layout_marginHorizontal="5dp"
+        android:id="@+id/img_test_1"
         android:layout_centerInParent="true"
         android:textColor="@color/black"
-        android:layout_width="200dp"
-        android:layout_height="200dp" />
+        android:layout_weight="0.5"
+        android:layout_width="0dp"
+        android:layout_height="50dp" />
 
-</RelativeLayout>
+    <ImageView
+        android:layout_marginHorizontal="5dp"
+        android:id="@+id/img_test_2"
+        android:layout_centerInParent="true"
+        android:textColor="@color/black"
+        android:layout_weight="0.5"
+        android:layout_width="0dp"
+        android:layout_height="50dp" />
+
+</LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:text="extension function 1"
+        android:id="@+id/btn_extension_function_1"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:text="extension function 2"
+        android:id="@+id/btn_extension_function_2"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:text="extension function 3"
+        android:id="@+id/btn_extension_function_3"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:text="extension function 4"
+        android:id="@+id/btn_extension_function_4"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:text="extension function 5"
+        android:id="@+id/btn_extension_function_5"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:text="extension function 6"
+        android:id="@+id/btn_extension_function_6"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:text="extension function 7"
+        android:id="@+id/btn_extension_function_7"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:text="extension function 8"
+        android:id="@+id/btn_extension_function_8"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
