@@ -4,6 +4,8 @@ import android.annotation.SuppressLint
 import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.view.inputmethod.InputMethodManager
 import android.widget.ImageView
 import android.widget.Toast
 import com.bumptech.glide.Glide
@@ -100,6 +102,11 @@ class MainActivity : AppCompatActivity() {
             transform(CircleCrop())
         }
 
+    }
+
+    fun View.hideKeyboard() {
+        val inputMethodManager = context.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+        inputMethodManager.hideSoftInputFromWindow(windowToken, 0)
     }
 
     private fun test4() {
